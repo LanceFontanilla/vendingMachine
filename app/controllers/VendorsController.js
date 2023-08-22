@@ -13,14 +13,14 @@ export class VendorsController {
 
         AppState.on('totalMoney', this.drawMoney)
     }
-    // drawSnackList() {
-    //     const snacks = AppState.snacks
-    //     let listContent = ''
-    //     snacks.forEach(snack => listContent += snack.ListTemplate)
-    //     console.log(listContent)
-    //     //document.getElementById('snack-list').innerHTML = listContent
-    //     setHTML('snack-list', listContent)
-    // }
+    drawSnackList() {
+        const snacks = AppState.snacks
+        let listContent = ''
+        snacks.forEach(snack => listContent += snack.ListTemplate)
+        console.log(listContent)
+        document.getElementById('snack-list').innerHTML = listContent
+        setHTML('snack-list', listContent)
+    }
 
     addMoney() {
         vendorsService.addMoney()
