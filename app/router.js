@@ -9,6 +9,11 @@ export const router = [
     path: '',
     controller: [HomeController, VendorsController],
     view: /*html*/ `
+<section class="row justify-content-center">
+
+
+
+
 
     `
   },

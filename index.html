@@ -40,19 +40,25 @@
   <!-- SECTION -->
   <main>
     <!-- PRIMARY VIEWPORT -->
-    <div id="router-view" class="container">
+    <div id="router-view" class="container-fluid">
 
     </div>
 
     <div class="container">
       <section class="row justify-content-center">
         <div class="card col-6 text-center" onclick="app.VendorsController.addMoney()" role="button">add .25</div>
-        <div class="col-6 text-center" id="totalMoney">
+        <div class="col-6 text-center" id="money">
           Money Total
         </div>
       </section>
-    </div>
 
+      <section class="row" id="listContent">
+        <div class="col-4 text-center d-flex">
+          <div onclick="app.VendorsController.buySnack()" role="button" class="btn btn-primary col-12 col-md-6 fs-3"
+            id="mySnacks">
+          </div>
+      </section>
+    </div>
 
   </main>
 
